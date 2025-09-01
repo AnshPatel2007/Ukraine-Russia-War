@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: lightpink;
+}
+
+.Brown {
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+img.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes invert-image {
+    from {
+        filter: invert(0%);
+    }
+    to {
+        filter: invert(100%);
+    }
+}
+
+img.image:hover {
+    animation: invert-image 3s backwards;
+}
+
+a {
+    float: right;
+}
+
+.size {
+    height: 250px;
+    width: 250px;
+}
+
+img{
+    opacity: 1;
+}
+
+h1.position {
+    position: absolute;
+    right: 700px;
+    top: 1000px;
+}
+
+a.location {
+    position: absolute;
+    right: 100px;
+    top: 900px;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+th {
+    background-color: green;
+    text-align: center;
+}
+
+td {
+    background-color: red;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+table.different {
+    border: 2px solid black;
+}
+
+th.differ {
+    background-color: sandybrown;
+}
+
+td.color {
+    background-color: grey;
+}
+
+button {
+    color: blue;
+    background-color: cyan;
+}
+
+@keyframes clear-image {
+    0%, 100%  { -webkit-filter: sepia(0%); }
+    50% { -webkit-filter: sepia(100%); }
+}
+
+img.opacity:hover {
+    animation: clear-image 5s forwards;
+}
+
+p.middle {
+    text-align: center;
+    font-size: 34px; 
+}
